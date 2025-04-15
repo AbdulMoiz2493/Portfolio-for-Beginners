@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Moiz - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-black text-gray-300">
+    <nav class="py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="mailto:abdulmoiz8895@gmail.com">
+                <img class="email" src="email.png" alt="" width="40px" length="40px" >
+            </a>
+
+            <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <div id="nav-content" class="hidden md:flex md:items-center md:space-x-5">
+                <a href="index.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Home</a>
+                <a href="personal-profile.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Profile</a>
+                <a href="gallery.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Gallery</a>
+                <a href="career-goals.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Goals</a>
+                <a href="projects.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Projects</a>
+                <a href="skills-interests.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Skills</a>
+                <a href="contact.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+   
+    <main class="max-w-6xl mx-auto py-20">
+        <h1 class="text-4xl font-bold mb-12 text-center">Gallery</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="relative">
+                <img src="debug.jpeg" alt="Project 1" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">The grind – fixing bugs and debugging code.</p>
+            </div>
+            <div class="relative">
+                <img src="codingdesk.jpeg" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">My daily workspace, where code turns into magic.</p>
+            </div>
+            <div class="relative">
+                <img src="coffee.jpeg" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">Fueling productivity with caffeine.</p>
+            </div>
+            <div class="relative">
+                <img src="team.png" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">Teamwork makes the dream work.</p>
+            </div>
+            <div class="relative">
+                <img src="versioncontrol.webp" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">Commit, push, repeat.</p>
+            </div>
+            <div class="relative">
+                <img src="sketch.jpeg" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                <p class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-1 text-center rounded-b-lg">Creativity flows in many forms – my sketches.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navContent = document.getElementById('nav-content');
+
+            navToggle.addEventListener('click', function() {
+                navContent.classList.toggle('hidden');
+                navContent.classList.toggle('block');
+            });
+        });
+    </script>
+    <footer class="py-8 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-2xl font-semibold mb-4">Tell me about your next project</h3>
+            <a href="contact.html" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">Get in Touch</a>
+            <br><br><br>
+            <h6 class="text-1xl  mb-4"><p>&copy; 2024 Abdul Moiz. All Rights Reserved.</p></h6>
+        </div>
+    </footer>
+</body>
+</html>

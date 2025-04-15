@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Moiz - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-black text-gray-300">
+    <nav class="py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <a href="mailto:abdulmoiz8895@gmail.com">
+                <img class="email" src="email.png" alt="" width="40px" length="40px" >
+            </a>
+
+            <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <div id="nav-content" class="hidden md:flex md:items-center md:space-x-5">
+                <a href="index.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Home</a>
+                <a href="personal-profile.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Profile</a>
+                <a href="gallery.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Gallery</a>
+                <a href="career-goals.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Goals</a>
+                <a href="projects.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Projects</a>
+                <a href="skills-interests.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Skills</a>
+                <a href="contact.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="max-w-4xl mx-auto py-20">
+        <h1 class="text-4xl font-bold mb-12 text-center">Contact Me</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+                <br>
+                <p class="mb-4">Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+                <div class="mb-4">
+                    <br>
+                    <p class="font-semibold">Email:</p>
+                    <p>abdulmoiz8895@gmail.com</p>
+                </div>
+                <div>
+                    <br>
+                    <p class="font-semibold">Phone:</p>
+                    <p>+92 332 9998876</p>
+                </div>
+            </div>
+            <div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navContent = document.getElementById('nav-content');
+
+            navToggle.addEventListener('click', function() {
+                navContent.classList.toggle('hidden');
+                navContent.classList.toggle('block');
+            });
+        });
+    </script>
+    <footer class="py-8 text-center">
+        <div class="max-w-6xl mx-auto">
+            <br>
+            <h6 class="text-1xl  mb-4"><p>&copy; 2024 Abdul Moiz. All Rights Reserved.</p></h6>
+        </div>
+    </footer>
+</body>
+</html>

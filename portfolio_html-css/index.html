@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Moiz - Digital Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-black text-gray-300">
+    <nav class="py-4 px-6 pos-fixed">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="mailto:abdulmoiz8895@gmail.com">
+                <img class="email" src="email.png" alt="" width="40px" length="40px" >
+            </a>
+
+            <button id="nav-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+
+            <div id="nav-content" class="hidden md:flex md:items-center md:space-x-5">
+                <a href="index.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Home</a>
+                <a href="personal-profile.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Profile</a>
+                <a href="gallery.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Gallery</a>
+                <a href="career-goals.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Goals</a>
+                <a href="projects.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Projects</a>
+                <a href="skills-interests.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Skills</a>
+                <a href="contact.html" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="py-20 text-center">
+        <div class="max-w-4xl mx-auto">
+            <img src="pfp.jpeg" alt="" class="w-32 h-32 rounded-full mx-auto mb-6">
+            <h1 class="text-1xl mb-2">Hi, I'm Abdul Moiz 👋</h1>
+            <br>
+            <h2 class="text-5xl mb-8">
+                Building digital <br> products, brands, and <br> experience.
+            </h2>
+            <a href="projects.html" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">Latest Work</a>
+        </div>
+    </header>
+
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto text-center">
+            
+            <div class="social-media">
+            <div class="flex justify-center space-x-12">
+                <a href="https://www.apple.com"><i class="fab fa-linkedin-in"></i>
+                <img src="apple.webp" alt="Brand 1" class="h-8"></a>
+                <a href="https://www.microsoft.com"><i class="fab fa-linkedin-in"></i>
+                <img src="microsoft.jpeg" alt="Brand 2" class="h-8" width="50px" height="70px"></a>
+                <a href="https://www.dropbox.com"><i class="fab fa-linkedin-in"></i>
+                <img src="dropbox.png" alt="Brand 3" class="h-8" width="30px" height="10px"></a>
+                <a href="https://www.adobe.com"><i class="fab fa-linkedin-in"></i>
+                <img src="adobe.png" alt="Brand 4" class="h-8" width="90px" height="10px"></a>
+                <a href="https://www.intel.com"><i class="fab fa-linkedin-in"></i>
+                <img src="intel.jpeg" alt="Brand 5" class="h-8" width="60px" height="60px"></a>
+            </div>
+            </div>
+            <br><br><br><br><br><br><br>
+            <h3 class="text-3xl mb-8">Collaborate with brands and agencies to <br> create impactful results.</h3>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            const navContent = document.getElementById('nav-content');
+
+            navToggle.addEventListener('click', function() {
+                navContent.classList.toggle('hidden');
+                navContent.classList.toggle('block');
+            });
+        });
+    </script>
+
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-6 bg-black rounded-lg">
+                <svg class="w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                <h4 class="text-xl font-semibold mb-2">UX & UI</h4>
+                <p class="text-gray-400">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+            </div>
+            <div class="p-6 bg-black rounded-lg">
+                <svg class="w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                <h4 class="text-xl font-semibold mb-2">Web & Mobile App</h4>
+                <p class="text-gray-400">Transforming ideas into exceptional web and mobile app experiences.</p>
+            </div>
+            <div class="p-6 bg-black rounded-lg">
+                <svg class="w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <h4 class="text-xl font-semibold mb-2">Design & Creative</h4>
+                <p class="text-gray-400">Crafting visually stunning designs that connect with your audience.</p>
+            </div>
+            <div class="p-6 bg-black rounded-lg">
+                <svg class="w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                <h4 class="text-xl font-semibold mb-2">Development</h4>
+                <p class="text-gray-400">Bringing your vision to life with the latest web technologies and trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-2xl font-semibold mb-4">Tell me about your next project</h3>
+            <a href="contact.html" class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">Get in Touch</a>
+            <br><br><br>
+            <h6 class="text-1xl  mb-4"><p>&copy; 2024 Abdul Moiz. All Rights Reserved.</p></h6>
+        </div>
+    </footer>
+</body>
+</html>
