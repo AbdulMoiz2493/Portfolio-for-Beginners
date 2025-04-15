@@ -27,7 +27,9 @@ A **simple and modern portfolio website** built with
 
 ## 📸 Preview
 
-![Portfolio Preview](https://raw.githubusercontent.com/AbdulMoiz2493/Portfolio-for-Beginners/image/preview.png)  
+<div align="center">
+  <img alt="Demo" src="./image/preview.png" />
+</div> 
 
 
 ---
